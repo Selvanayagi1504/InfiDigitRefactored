@@ -23,19 +23,12 @@ html {
 scroll-behavior: smooth;
 }
 
-.pad-zero{
-  padding: 0!important;
-}
+
 .pad-lzero{
   padding-left: 0!important
 }
-.pad-rzero{
-  padding-right: 0!important
-}
-.custom-container{
-  width: 1260px;
-  margin: 0 auto;
-}
+
+
 
 ul{
   margin: 0;
@@ -67,15 +60,10 @@ ul{
     overflow-x: hidden;
     height: 100vh;
     overflow-y: scroll;
-    /* position: sticky; */
-    /* left: 0; */
-    /* top: 64px; */
     padding: 16px 0;
     width: 190px;
     background-color: #4e73df;
-    background-image: linear-gradient( 
-180deg
- ,#4e73df 10%,#224abe 100%);
+    background-image: linear-gradient( 180deg,#4e73df 10%,#224abe 100%);
     background-size: cover;
     z-index: 1;
     padding-bottom: 64px;
@@ -88,24 +76,17 @@ ul{
     border-radius: 10px;
   }
   
- ul.configuration-tab-list.projects-list::-webkit-scrollbar
+  ul.configuration-tab-list.projects-list::-webkit-scrollbar
   {
     width: 5px;
     background-color: #F5F5F5;
   }
   
- ul.configuration-tab-list.projects-list::-webkit-scrollbar-thumb
+  ul.configuration-tab-list.projects-list::-webkit-scrollbar-thumb
   {
     background-color: #AAA;
     border-radius: 10px;
-    background-image: -webkit-linear-gradient(90deg,
-                                              rgba(0, 0, 0, .2) 25%,
-                          /* transparent 25%,
-                          transparent 50%,
-                          rgba(0, 0, 0, .2) 50%,
-                          rgba(0, 0, 0, .2) 75%,
-                          transparent 75%, */
-                          transparent)
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .2) 25%,transparent)
   }
  .sidebar-nav-bar::-webkit-scrollbar-track
   {
@@ -124,14 +105,7 @@ ul{
   {
     background-color: #AAA;
     border-radius: 10px;
-    background-image: -webkit-linear-gradient(90deg,
-                                              rgba(0, 0, 0, .2) 25%,
-                          /* transparent 25%,
-                          transparent 50%,
-                          rgba(0, 0, 0, .2) 50%,
-                          rgba(0, 0, 0, .2) 75%,
-                          transparent 75%, */
-                          transparent)
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .2) 25%,transparent)
   }
   #sample::-webkit-scrollbar-track
   {
@@ -140,7 +114,7 @@ ul{
     border-radius: 10px;
   }
   
- #sample::-webkit-scrollbar
+  #sample::-webkit-scrollbar
   {
     width: 5px;
     height: 5px;
@@ -151,14 +125,7 @@ ul{
   {
     background-color: #AAA;
     border-radius: 10px;
-    background-image: -webkit-linear-gradient(90deg,
-                                              rgba(0, 0, 0, .2) 25%,
-                          /* transparent 25%,
-                          transparent 50%,
-                          rgba(0, 0, 0, .2) 50%,
-                          rgba(0, 0, 0, .2) 75%,
-                          transparent 75%, */
-                          transparent)
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .2) 25%,transparent)
   }
   .page-speed-second .ant-table::-webkit-scrollbar-track
   {
@@ -167,7 +134,7 @@ ul{
     border-radius: 10px;
   }
   
- .page-speed-second .ant-table::-webkit-scrollbar
+  .page-speed-second .ant-table::-webkit-scrollbar
   {
     width: 5px;
     height: 5px;
@@ -178,14 +145,7 @@ ul{
   {
     background-color: #AAA;
     border-radius: 10px;
-    background-image: -webkit-linear-gradient(90deg,
-                                              rgba(0, 0, 0, .2) 25%,
-                          /* transparent 25%,
-                          transparent 50%,
-                          rgba(0, 0, 0, .2) 50%,
-                          rgba(0, 0, 0, .2) 75%,
-                          transparent 75%, */
-                          transparent)
+    background-image: -webkit-linear-gradient(90deg,rgba(0, 0, 0, .2) 25%,transparent)
   }
   .side-menu a{
     font-size: 14px;
@@ -235,7 +195,6 @@ ul{
   .nav-right-menu .dropdown-menu.show a:hover,.nav-right-menu .dropdown-menu.show a:focus{
     text-decoration: none;
     color: #5a6ff3;
-    /*color: #000290;*/
   }
   .profile-pic img {
     width: 40px;
@@ -254,9 +213,8 @@ ul{
   .main-title{
     font-size: 21px;
     font-weight: 700;
-  /* color: #000290; */
-  text-transform: uppercase;
-  margin: 0 0 16px;
+    text-transform: uppercase;
+    margin: 0 0 16px;
   }
   .add-new-btnw{
       text-align: right;
@@ -268,21 +226,8 @@ ul{
   .dashboard-wrapper{
     padding: 40px 16px 16px;
   }
-  .main-cards{
-    padding: 16px 0;
-  }
-  .m-card{
-    padding: 16px;
-    border-radius: 4px;
-    background: #fff;
-    font-size: 14px;
-    box-shadow: 1px 1px 4px rgba(0,0,0,.08);
-  }
-  .m-card h3{
-    font-size: 16px;
-    font-weight: 600;
-    padding: 0 0 16px;
-  }
+  
+
   .outline-btn{
     text-transform: uppercase;
     border-radius: 2.6px;
@@ -306,12 +251,8 @@ ul{
   .outline-btn i{
     color: #000290;
   }
-  .monitor-graph li{
-    padding: 0 0 16px;
-  }
-  .slot-count{
-    float: right;
-  }
+  
+  
   .chart-bar{
     height: 24px;
     background: #163c8a

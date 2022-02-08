@@ -465,5 +465,11 @@
         margin-left:unset;
         margin-right:unset;
     }
+    .dashboard-seo-bradcrumb .ant-breadcrumb{
+        margin-top: 150px !important;
+    }
+    .Graph-rank{
+        margin-top: -38px !important;
+    }
 }
 

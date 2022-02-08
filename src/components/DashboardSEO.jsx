@@ -339,7 +339,7 @@ return (
 
   <div className="Common-Row-Div">
    <SideNavCustomMain />
-    <div className="Common-mt-64">
+    <div className="Common-mt-64 dashboard-seo-bradcrumb">
     <Breadcrumb>
         <Breadcrumb.Item><a href="/">Home</a></Breadcrumb.Item>
         <Breadcrumb.Item>

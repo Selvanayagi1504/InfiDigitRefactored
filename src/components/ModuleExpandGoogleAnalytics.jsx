@@ -836,14 +836,14 @@ function ModuleExpandGoogleAnalytics() {
     }, [open])
     return (
         <>
-            <section class="outer-wrapper module-expand-ga dashboard-seo">
+            <section class="outer-wrapper module-expand-ga dashboard-seo dashboard-seo-bradcrumb">
                 {
                     usertype == "SEO" 
                     ?
                         <div class="top-nav-bar">
                             <div className="Ham">
                                 <SideNavCustomMainMob />
-                                <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span></div>
+                                <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span>
                                 <div className="wrapper dashboard-seo-dropdown" ref={ref}>
                                     <button
                                         className="button"
@@ -852,26 +852,27 @@ function ModuleExpandGoogleAnalytics() {
                                         All data View <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </button>
                                     {isMenuOpen && (
-                                    <div className="row">
-                                        <div className="col-md-6" style={{borderRight:'1px solid rgba(0,0,0,.15)'}}>
-                                            
-                                            <ul className="Clients-list">
-                                                <li  onClick={()=>{showProjects("Myntra")}}><span>Myntra</span> <i class="fa fa-angle-right"></i></li>
-                                                <li  onClick={()=>{showProjects("Amazon")}}><span>Amazon</span> <i class="fa fa-angle-right"></i></li>
-                                            </ul>
+                                        <div className="row">
+                                            <div className="col-md-6" style={{borderRight:'1px solid rgba(0,0,0,.15)'}}>
+                                                
+                                                <ul className="Clients-list">
+                                                    <li  onClick={()=>{showProjects("Myntra")}}><span>Myntra</span> <i class="fa fa-angle-right"></i></li>
+                                                    <li  onClick={()=>{showProjects("Amazon")}}><span>Amazon</span> <i class="fa fa-angle-right"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div className="col-md-6">
+                                                <ul class="projectsList">
+                                                {clientchosen.map((i)=>{
+                                                    return(
+                                                        <li onClick={()=>{setIsMenuOpen(false)}}><a style={{color:"inherit"}} href={`dashboard-seo?id=${i.projname}`}>{i.projname}</a></li>
+                                                    )
+                                                })}
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div className="col-md-6">
-                                            <ul class="projectsList">
-                                            {clientchosen.map((i)=>{
-                                                return(
-                                                <li onClick={()=>{setIsMenuOpen(false)}}><a style={{color:"inherit"}} href={`dashboard-seo?id=${i.projname}`}>{i.projname}</a></li>
-                                                )
-                                            })}
-                                            </ul>
-                                        </div>
-                                    </div>
 
                                     )}
+                                    </div>
                                 </div> 
                             </div>
                             <div class="nav-bar-right">
@@ -972,7 +973,7 @@ function ModuleExpandGoogleAnalytics() {
                 }
                 <div className="Common-Row-Div">
                     <SideNavCustomMain />
-                    <div className="Common-mt-64">
+                    <div className="Common-mt-64 dashboard-seo-bradcrumb">
                         
                         <Breadcrumb>
                             <Breadcrumb.Item>Home</Breadcrumb.Item>

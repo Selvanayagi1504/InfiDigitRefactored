@@ -452,14 +452,14 @@ function ModuleExpandGSC() {
     }, [open])
     return (
         <>
-            <section class="outer-wrapper module-expand-gsc dashboard-seo">
+            <section class="outer-wrapper module-expand-gsc dashboard-seo dashboard-seo-bradcrumb">
                 {
                     usertype == "SEO" 
                     ?
                         <div class="top-nav-bar">
                             <div className="Ham">
                                 <SideNavCustomMainMob />
-                                <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span></div>
+                                <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span>
                                 <div className="wrapper dashboard-seo-dropdown" ref={ref}>
                                     <button
                                         className="button"
@@ -488,6 +488,7 @@ function ModuleExpandGSC() {
                                         </div>
 
                                     )}
+                                    </div>
                                 </div> 
                             </div>
                             <div class="nav-bar-right">

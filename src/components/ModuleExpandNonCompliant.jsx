@@ -303,7 +303,7 @@ function ModuleExpandNonComplaint() {
 
   return (
     <>
-      <section class="outer-wrapper seo-audit">
+      <section class="outer-wrapper seo-audit dashboard-seo-bradcrumb">
         <div class="top-nav-bar">
           <div class="logo">
             <a href="">

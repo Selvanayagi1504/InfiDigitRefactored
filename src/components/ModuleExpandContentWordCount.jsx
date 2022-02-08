@@ -289,14 +289,14 @@ function ModuleExpandContentWordCount() {
     }, [open])
     return (
         <>
-            <section class="outer-wrapper module-expand-site-uptime content-word-count dashboard-seo">
+            <section class="outer-wrapper module-expand-site-uptime content-word-count dashboard-seo dashboard-seo-bradcrumb">
                 {
                     usertype == "SEO" 
                     ?
                         <div class="top-nav-bar">
                             <div className="Ham">
                                 <SideNavCustomMainMob />
-                                <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span></div>
+                                <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span>
                                 <div className="wrapper dashboard-seo-dropdown" ref={ref}>
                                     <button
                                         className="button"
@@ -317,7 +317,7 @@ function ModuleExpandContentWordCount() {
                                                 <ul class="projectsList">
                                                 {clientchosen.map((i)=>{
                                                     return(
-                                                    <li onClick={()=>{setIsMenuOpen(false)}}><a style={{color:"inherit"}} href={`dashboard-seo?id=${i.projname}`}>{i.projname}</a></li>
+                                                        <li onClick={()=>{setIsMenuOpen(false)}}><a style={{color:"inherit"}} href={`dashboard-seo?id=${i.projname}`}>{i.projname}</a></li>
                                                     )
                                                 })}
                                                 </ul>
@@ -325,6 +325,7 @@ function ModuleExpandContentWordCount() {
                                         </div>
 
                                     )}
+                                    </div>
                                 </div> 
                             </div>
                             <div class="nav-bar-right">
@@ -350,8 +351,6 @@ function ModuleExpandContentWordCount() {
                                                 </Dropdown.Item>
                                             </Dropdown.Menu>
                                         </Dropdown>
-
-
                                     </li>
 
                                     <li class="dropdown">
@@ -359,6 +358,8 @@ function ModuleExpandContentWordCount() {
                                             <span class="profile-pic"><img src="images/profile-pic.jpeg" alt=""/></span>
                                             <span class="profile-name">SEO</span>
                                         </button>
+
+
 
                                         <ul style={{display:sidenav?"block":"none"}} class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                             <li><a href="/profile">Profile</a></li>
@@ -425,7 +426,7 @@ function ModuleExpandContentWordCount() {
                 }
                 <div className="Common-Row-Div">
                     <SideNavCustomMain />
-                    <div className="Common-mt-64">
+                    <div className="Common-mt-64 dashboard-seo-bradcrumb">
                     
                         <Breadcrumb>
                             <Breadcrumb.Item>Home</Breadcrumb.Item>

@@ -306,15 +306,14 @@ function ModuleExpandGoogleTrends() {
     }, [open])
     return (
         <>
-            <section class="outer-wrapper module-expand-GT dashboard-seo">
+            <section class="outer-wrapper module-expand-GT dashboard-seo dashboard-seo-bradcrumb">
                 {
                     usertype == "SEO" 
                     ?
                         <div class="top-nav-bar">
                             <div className="Ham">
                                 <SideNavCustomMainMob />
-                                <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span></div>
-                    
+                                <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span>
                                 <div className="wrapper dashboard-seo-dropdown" ref={ref}>
                                     <button
                                         className="button"
@@ -335,7 +334,7 @@ function ModuleExpandGoogleTrends() {
                                                 <ul class="projectsList">
                                                 {clientchosen.map((i)=>{
                                                     return(
-                                                    <li onClick={()=>{setIsMenuOpen(false)}}><a style={{color:"inherit"}} href={`dashboard-seo?id=${i.projname}`}>{i.projname}</a></li>
+                                                        <li onClick={()=>{setIsMenuOpen(false)}}><a style={{color:"inherit"}} href={`dashboard-seo?id=${i.projname}`}>{i.projname}</a></li>
                                                     )
                                                 })}
                                                 </ul>
@@ -343,54 +342,53 @@ function ModuleExpandGoogleTrends() {
                                         </div>
 
                                     )}
+                                    </div>
                                 </div> 
                             </div>
-                        <div class="nav-bar-right">
-                            <ul class="list-unstyled nav-right-menu">
-                                <li>
-                                    <Dropdown id="notification-dropdown">
-                                        <Dropdown.Toggle id="dropdown-basic">
-                                        <i class="fa fa-bell"></i>
-                                        </Dropdown.Toggle>
-                                        <Dropdown.Menu>
-                                            <Dropdown.Item href="">
-                                                <div className="notification-item">
-                                                    <h4>Notification 1!!</h4>
-                                                    <p>21 hours ago..</p>
-                                                </div>
-                                            </Dropdown.Item>
-                                            <hr />
-                                            <Dropdown.Item href="" style={{backgroundColor:"#85C1E9"}}>
-                                                <div className="notification-item" >
-                                                    <h4>Notification 2!!</h4>
-                                                    <p>8 hours ago..</p>
-                                                </div>
-                                            </Dropdown.Item>
-                                        </Dropdown.Menu>
-                                    </Dropdown>
+                            <div class="nav-bar-right">
+                                <ul class="list-unstyled nav-right-menu">
+                                    <li>
+                                        <Dropdown id="notification-dropdown">
+                                            <Dropdown.Toggle id="dropdown-basic">
+                                            <i class="fa fa-bell"></i>
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="">
+                                                    <div className="notification-item">
+                                                        <h4>Notification 1!!</h4>
+                                                        <p>21 hours ago..</p>
+                                                    </div>
+                                                </Dropdown.Item>
+                                                <hr />
+                                                <Dropdown.Item href="" style={{backgroundColor:"#85C1E9"}}>
+                                                    <div className="notification-item" >
+                                                        <h4>Notification 2!!</h4>
+                                                        <p>8 hours ago..</p>
+                                                    </div>
+                                                </Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </li>
 
-
-                                </li>
-
-                                <li class="dropdown">
-                                    <button onClick={()=>{console.log("hiii");setsidenav(!sidenav);}} class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1">
-                                        <span class="profile-pic"><img src="images/profile-pic.jpeg" alt=""/></span>
-                                        <span class="profile-name">SEO</span>
-                                    </button>
+                                    <li class="dropdown">
+                                        <button onClick={()=>{console.log("hiii");setsidenav(!sidenav);}} class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1">
+                                            <span class="profile-pic"><img src="images/profile-pic.jpeg" alt=""/></span>
+                                            <span class="profile-name">SEO</span>
+                                        </button>
 
 
 
-                                    <ul style={{display:sidenav?"block":"none"}} class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <li><a href="/profile">Profile</a></li>
+                                        <ul style={{display:sidenav?"block":"none"}} class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a href="/profile">Profile</a></li>
 
-                                        <li><a href="/">Log Out</a></li>
-                                    </ul>
+                                            <li><a href="/">Log Out</a></li>
+                                        </ul>
 
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div> 
                     :
                         <div class="top-nav-bar">
                             <div className="Ham">

@@ -479,135 +479,87 @@ function ModuleExpandSiteUptime() {
   const [usertype, setusertype] = useState(u);
   return (
     <>
-      <section class="outer-wrapper module-expand-site-uptime dashboard-seo">
+      <section class="outer-wrapper module-expand-site-uptime dashboard-seo dashboard-seo-bradcrumb">
         {usertype == "SEO" ? (
           <div class="top-nav-bar">
-            <div className="Ham">
+          <div className="Ham">
               <SideNavCustomMainMob />
-              <div class="logo">
-                <a href="">
-                  <img src="images/infidigit-logo.png" />
-                </a>{" "}
-                <span>Growth</span>
-              </div>
+              <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span>
               <div className="wrapper dashboard-seo-dropdown" ref={ref}>
-                <button
-                  className="button"
-                  onClick={() => setIsMenuOpen((oldState) => !oldState)}
-                >
-                  All data View{" "}
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-                {isMenuOpen && (
-                  <div className="row">
-                    <div
-                      className="col-md-6"
-                      style={{ borderRight: "1px solid rgba(0,0,0,.15)" }}
-                    >
-                      <ul className="Clients-list">
-                        <li
-                          onClick={() => {
-                            showProjects("Myntra");
-                          }}
-                        >
-                          <span>Myntra</span> <i class="fa fa-angle-right"></i>
-                        </li>
-                        <li
-                          onClick={() => {
-                            showProjects("Amazon");
-                          }}
-                        >
-                          <span>Amazon</span> <i class="fa fa-angle-right"></i>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-md-6">
-                      <ul class="projectsList">
-                        {clientchosen.map((i) => {
-                          return (
-                            <li
-                              onClick={() => {
-                                setIsMenuOpen(false);
-                              }}
-                            >
-                              <a
-                                style={{ color: "inherit" }}
-                                href={`dashboard-seo?id=${i.projname}`}
-                              >
-                                {i.projname}
-                              </a>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-            {/* <div class="nav-bar-center">&nbsp;</div> */}
-            <div class="nav-bar-right">
-              <ul class="list-unstyled nav-right-menu">
-                <li>
-                  <Dropdown id="notification-dropdown">
-                    <Dropdown.Toggle id="dropdown-basic">
-                      <i class="fa fa-bell"></i>
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="">
-                        <div className="notification-item">
-                          <h4>Notification 1!!</h4>
-                          <p>21 hours ago..</p>
-                        </div>
-                      </Dropdown.Item>
-                      <hr />
-                      <Dropdown.Item
-                        href=""
-                        style={{ backgroundColor: "#85C1E9" }}
-                      >
-                        <div className="notification-item">
-                          <h4>Notification 2!!</h4>
-                          <p>8 hours ago..</p>
-                        </div>
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                </li>
-
-                <li class="dropdown">
                   <button
-                    onClick={() => {
-                      console.log("hiii");
-                      setsidenav(!sidenav);
-                    }}
-                    class="btn btn-default dropdown-toggle"
-                    type="button"
-                    id="dropdownMenu1"
+                      className="button"
+                      onClick={() => setIsMenuOpen(oldState => !oldState)}
                   >
-                    <span class="profile-pic">
-                      <img src="images/profile-pic.jpeg" alt="" />
-                    </span>
-                    <span class="profile-name">SEO</span>
+                      All data View <i class="fa fa-caret-down" aria-hidden="true"></i>
                   </button>
+                  {isMenuOpen && (
+                      <div className="row">
+                          <div className="col-md-6" style={{borderRight:'1px solid rgba(0,0,0,.15)'}}>
+                              
+                              <ul className="Clients-list">
+                                  <li  onClick={()=>{showProjects("Myntra")}}><span>Myntra</span> <i class="fa fa-angle-right"></i></li>
+                                  <li  onClick={()=>{showProjects("Amazon")}}><span>Amazon</span> <i class="fa fa-angle-right"></i></li>
+                              </ul>
+                          </div>
+                          <div className="col-md-6">
+                              <ul class="projectsList">
+                              {clientchosen.map((i)=>{
+                                  return(
+                                      <li onClick={()=>{setIsMenuOpen(false)}}><a style={{color:"inherit"}} href={`dashboard-seo?id=${i.projname}`}>{i.projname}</a></li>
+                                  )
+                              })}
+                              </ul>
+                          </div>
+                      </div>
 
-                  <ul
-                    style={{ display: sidenav ? "block" : "none" }}
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuLink"
-                  >
-                    <li>
-                      <a href="/profile">Profile</a>
-                    </li>
-
-                    <li>
-                      <a href="/">Log Out</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="clearfix"></div>
+                  )}
+                  </div>
+              </div> 
           </div>
+          <div class="nav-bar-right">
+              <ul class="list-unstyled nav-right-menu">
+                  <li>
+                      <Dropdown id="notification-dropdown">
+                          <Dropdown.Toggle id="dropdown-basic">
+                          <i class="fa fa-bell"></i>
+                          </Dropdown.Toggle>
+                          <Dropdown.Menu>
+                              <Dropdown.Item href="">
+                                  <div className="notification-item">
+                                      <h4>Notification 1!!</h4>
+                                      <p>21 hours ago..</p>
+                                  </div>
+                              </Dropdown.Item>
+                              <hr />
+                              <Dropdown.Item href="" style={{backgroundColor:"#85C1E9"}}>
+                                  <div className="notification-item" >
+                                      <h4>Notification 2!!</h4>
+                                      <p>8 hours ago..</p>
+                                  </div>
+                              </Dropdown.Item>
+                          </Dropdown.Menu>
+                      </Dropdown>
+                  </li>
+
+                  <li class="dropdown">
+                      <button onClick={()=>{console.log("hiii");setsidenav(!sidenav);}} class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1">
+                          <span class="profile-pic"><img src="images/profile-pic.jpeg" alt=""/></span>
+                          <span class="profile-name">SEO</span>
+                      </button>
+
+
+
+                      <ul style={{display:sidenav?"block":"none"}} class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a href="/profile">Profile</a></li>
+
+                          <li><a href="/">Log Out</a></li>
+                      </ul>
+
+                  </li>
+              </ul>
+          </div>
+          <div class="clearfix"></div>
+      </div> 
         ) : (
           <div class="top-nav-bar">
             <div className="Ham">
