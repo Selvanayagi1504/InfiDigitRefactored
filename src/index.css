@@ -1656,9 +1656,7 @@ height: 40px;
   border-radius: 28px;
   font-size: 21px;
 }
-.edit-notes .modal-content{
-  /* background-color:#fff ; */
-}
+
 .edit-notes .modal-dialog{
   background-color: #fff;
 }
@@ -2303,9 +2301,7 @@ ul.list-enhace-headings {
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
-/* Tickets CSS */
-.priority {
-}
+
 .add-user-tickets {
   width: 100%;
 }
@@ -2313,8 +2309,7 @@ ul.list-enhace-headings {
   width: 40px;
   height: 40px;
 }
-.notetextarea {
-}
+
 .notetextarea:hover {
   background-color: rgba(236, 236, 236, 0.993);
   transform: scale(1.01);
@@ -2410,9 +2405,7 @@ label span input {
 .module-expand-gsc #aggregation{
   max-width: 52% !important;
 }
-.generate-report {
-  /* margin-left: -36%; */
-}
+
 
 .total-click-bg{
   background-color: red;
@@ -2494,9 +2487,7 @@ label span input {
 .keyword-filter{
   left: -15px
 }
-.e-multiselect.e-input-group.e-control-wrapper.e-checkbox{
 
-}
 .e-multiselect.e-input-group.e-control-wrapper.e-checkbox.e-valid-input .e-multi-select-wrapper {
   border: 1px solid hsl(0, 0%, 80%);
   background-color: unset;
@@ -3942,9 +3933,7 @@ div#example-collapse-text-calendar {
     padding: 8px 16px;
     height: 40px;
   }
-  .score-maintain {
-  /* margin-top: 86px; */
-  }
+
   .common-table{
     width: -webkit-fill-available;
   }
