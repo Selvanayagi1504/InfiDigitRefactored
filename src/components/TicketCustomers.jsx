@@ -9,6 +9,7 @@ import {
   SideNavBarCustom,
   SideNavBarCustomClosed,
 } from "./index";
+import TopNavBarCustom from "./TopNavBar";
 
 function TicketCustomers() {
   const [startDate, setStartDate] = useState(new Date());
@@ -152,7 +153,8 @@ function TicketCustomers() {
   return (
     <>
       <section class="outer-wrapper dashboard-seo">
-        <div class="top-nav-bar">
+        <TopNavBarCustom />
+        {/* <div class="top-nav-bar">
           <div class="logo">
             <a href="">
               <img src="images/infidigit-logo.png" />
@@ -213,7 +215,7 @@ function TicketCustomers() {
               )}
             </div>
           </div>
-          {/* <div class="nav-bar-center">&nbsp;</div> */}
+          <div class="nav-bar-center">&nbsp;</div> 
           <div class="nav-bar-right">
             <ul class="list-unstyled nav-right-menu">
               <li>
@@ -253,7 +255,7 @@ function TicketCustomers() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
+        </div> */}
 
         <div className="custom-row-dashboard-seo">
           <div

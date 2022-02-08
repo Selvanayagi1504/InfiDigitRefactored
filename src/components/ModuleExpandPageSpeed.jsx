@@ -17,6 +17,7 @@ import DatePicker, { DateObject } from "react-multi-date-picker";
 import { Calendar } from "react-multi-date-picker";
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 const Option = (props) => {
   return (
@@ -551,7 +552,8 @@ function ModuleExpandPageSpeed() {
   return (
     <>
       <section class="outer-wrapper page-speed-main dashboard-seo dashboard-seo-bradcrumb">
-        {usertype == "SEO" ? (
+        <TopNavBarCustom />
+        {/* {usertype == "SEO" ? (
           <div class="top-nav-bar">
           <div className="Ham">
               <SideNavCustomMainMob />
@@ -702,7 +704,7 @@ function ModuleExpandPageSpeed() {
             </div>
             <div class="clearfix"></div>
           </div>
-        )}
+        )} */}
         <div className="Common-Row-Div">
           <SideNavCustomMain />
           <div className="Common-mt-64">

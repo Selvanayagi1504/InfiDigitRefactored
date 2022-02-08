@@ -3,6 +3,7 @@ import {useState, useEffect} from "react";
 import "antd/dist/antd.css";
 import {Dropdown} from 'react-bootstrap'
 import { SideNavBarCustom, SideNavBarCustomClosed } from '.';
+import TopNavBarCustom from "./TopNavBar";
 
 
 
@@ -348,7 +349,7 @@ function ModuleExpandDesignation() {
     return (
         <>
             <section class="outer-wrapper ModuleExpandDesignation">
-            <div class="top-nav-bar">
+            {/* <div class="top-nav-bar">
                 <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span></div>
                 <div class="nav-bar-center">&nbsp;</div>
                 <div class="nav-bar-right">
@@ -396,9 +397,9 @@ function ModuleExpandDesignation() {
                     </ul>
                 </div>
                 <div class="clearfix"></div>
-            </div>
+            </div> */}
 
-            
+            <TopNavBarCustom />
             <div class="content-wrapper">
                 <div class="dashboard-wrapper">
                     <div class="sidebar-nav-bar">

@@ -4,6 +4,7 @@ import {Dropdown} from 'react-bootstrap'
 import {Breadcrumb} from 'antd'
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 function EditClient() {
     const [sidenav,setsidenav] = useState(false);
@@ -26,7 +27,7 @@ function EditClient() {
 return (
 <>
     <section class="outer-wrapper">
-        <div class="top-nav-bar">
+        {/* <div class="top-nav-bar">
             <div className="Ham">
                 <SideNavCustomMainMob />
                 <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span>
@@ -78,9 +79,9 @@ return (
                 </ul>
             </div>
             <div class="clearfix"></div>
-        </div>
+        </div> */}
 
-
+<TopNavBarCustom />
         <div className="Common-Row-Div">
                  <SideNavCustomMain />
             

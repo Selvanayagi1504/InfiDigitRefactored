@@ -11,6 +11,7 @@ import { DateObject } from "react-multi-date-picker";
 import { Calendar } from "react-multi-date-picker";
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
@@ -166,7 +167,7 @@ function EditEmployee() {
   return (
     <>
       <section class="outer-wrapper edit-employee-main">
-        <div class="top-nav-bar">
+        {/* <div class="top-nav-bar">
           <div className="Ham">
             <SideNavCustomMainMob />
             <div class="logo">
@@ -238,8 +239,8 @@ function EditEmployee() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
-
+        </div> */}
+<TopNavBarCustom />
         <div className="Common-Row-Div">
           <SideNavCustomMain />
           <div className="Common-mt-64">

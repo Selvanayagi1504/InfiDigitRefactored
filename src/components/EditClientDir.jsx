@@ -5,6 +5,7 @@ import {Breadcrumb} from 'antd'
 import { useLocation } from "react-router-dom";
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 function EditClientDir() {
     const search = useLocation().search;
@@ -53,7 +54,8 @@ function EditClientDir() {
 return (
 <>
     <section class="outer-wrapper">
-        <div class="top-nav-bar">
+        <TopNavBarCustom />
+        {/* <div class="top-nav-bar">
             
             <div className="Ham">
                 <SideNavCustomMainMob />
@@ -106,7 +108,7 @@ return (
                 </ul>
             </div>
             <div class="clearfix"></div>
-        </div>
+        </div> */}
 
         <div className="Common-Row-Div">
             <SideNavCustomMain />

@@ -4,6 +4,7 @@ import { Button, Modal } from "react-bootstrap";
 import "antd/dist/antd.css";
 import { Dropdown } from "react-bootstrap";
 import { Breadcrumb } from "antd";
+import TopNavBarCustom from "./TopNavBar";
 
 function ProjectDetailsDir() {
   const [sidenav, setsidenav] = useState(false);
@@ -52,7 +53,8 @@ function ProjectDetailsDir() {
   return (
     <>
       <section class="outer-wrapper">
-        <div class="top-nav-bar">
+        <TopNavBarCustom />
+        {/* <div class="top-nav-bar">
           <div class="logo">
             <a href="">
               <img src="images/infidigit-logo.png" />
@@ -145,7 +147,7 @@ function ProjectDetailsDir() {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div class="content-wrapper">
           <div class="dashboard-wrapper">
             <Breadcrumb>

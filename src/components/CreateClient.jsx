@@ -5,6 +5,8 @@ import {SideNavBarCustom, SideNavBarCustomClosed} from './index'
 import {Breadcrumb} from 'antd'
 
 import { FilePicker } from 'react-file-picker'
+import TopNavBarCustom from "./TopNavBar";
+import SideNavCustomMain from "./SideNavCustomMain";
 function CreateClient() {
     const [phonecode, setphonecode] = useState("+91");
     const [countrycodes, setcountrycodes] = useState([]);
@@ -50,7 +52,7 @@ function CreateClient() {
 return (
 <>
     <section class="outer-wrapper">
-        <div class="top-nav-bar">
+        {/* <div class="top-nav-bar">
             <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span></div>
             <div class="nav-bar-center">&nbsp;</div>
             <div class="nav-bar-right">
@@ -98,31 +100,12 @@ return (
                 </ul>
             </div>
             <div class="clearfix"></div>
-        </div>
-
-        <div className="custom-row-dashboard-seo">
-            <div className={sidenavToggle?"custom-column-20-dashboard-seo":"custom-column-10-dashboard-seo"}>
-                <div class="sidebar-nav-bar sidebar-sales">
-                {sidenavToggle 
-                            ?
-                            <>
-                                <SideNavBarCustom />
-                                <button class="control-toggle-dashboard-seo" onClick={()=>setSidenavToggle(!sidenavToggle)}>
-                                <i class="fa fa-angle-left"></i>
-                                </button>
-                            </>
-                            :
-                            <>
-                                <SideNavBarCustomClosed />
-                                <button class="control-toggle-dashboard-seo" onClick={()=>setSidenavToggle(!sidenavToggle)}>
-                                <i class="fa fa-angle-right"></i>
-                                </button>
-                            </>
-                        }    
-                </div>
-            </div>
-            <div className={sidenavToggle?"custom-column-80-dashboard-seo main-dashboard":"custom-column-90-dashboard-seo main-dashboard"}>
-                <Breadcrumb>
+        </div> */}
+        <TopNavBarCustom />
+        <div className="Common-Row-Div">
+            <SideNavCustomMain />
+            <div className="Common-mt-64">
+            <Breadcrumb>
                     <Breadcrumb.Item><a href="/">Home</a></Breadcrumb.Item>
                     <Breadcrumb.Item><a href="/dashboard-sales">Dashboard</a></Breadcrumb.Item>
                     <Breadcrumb.Item>
@@ -244,6 +227,31 @@ return (
                 </div>
             </div>
         </div>
+        {/* <div className="custom-row-dashboard-seo">
+            <div className={sidenavToggle?"custom-column-20-dashboard-seo":"custom-column-10-dashboard-seo"}>
+                <div class="sidebar-nav-bar sidebar-sales">
+                {sidenavToggle 
+                            ?
+                            <>
+                                <SideNavBarCustom />
+                                <button class="control-toggle-dashboard-seo" onClick={()=>setSidenavToggle(!sidenavToggle)}>
+                                <i class="fa fa-angle-left"></i>
+                                </button>
+                            </>
+                            :
+                            <>
+                                <SideNavBarCustomClosed />
+                                <button class="control-toggle-dashboard-seo" onClick={()=>setSidenavToggle(!sidenavToggle)}>
+                                <i class="fa fa-angle-right"></i>
+                                </button>
+                            </>
+                        }    
+                </div>
+            </div>
+            <div className={sidenavToggle?"custom-column-80-dashboard-seo main-dashboard":"custom-column-90-dashboard-seo main-dashboard"}>
+                
+            </div>
+        </div> */}
     </section>
 </>
 );

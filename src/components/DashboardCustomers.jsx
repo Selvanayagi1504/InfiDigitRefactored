@@ -10,6 +10,7 @@ import { NotificationSEO } from "./index";
 import 'rsuite/dist/rsuite.css';
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 function DashboardCustomers() {
     const [sidenav,setsidenav] = useState(false);
@@ -72,7 +73,7 @@ function DashboardCustomers() {
     return (
         <>
             <section class="outer-wrapper dashboard-sales dashboard-seo dashboard-customers">
-                <div class="top-nav-bar">
+                {/* <div class="top-nav-bar">
                     <div className="Ham tickets-burger">
                     <SideNavCustomMainMob />
                     <div class="logo">
@@ -131,7 +132,7 @@ function DashboardCustomers() {
                         )}
                     </div>
                     </div>
-                    {/* <div class="nav-bar-center">&nbsp;</div> */}
+                    
                     <div class="nav-bar-right">
                     <ul class="list-unstyled nav-right-menu">
                         <li>
@@ -168,7 +169,8 @@ function DashboardCustomers() {
                     </ul>
                     </div>
                     <div class="clearfix"></div>
-                </div>
+                </div> */}
+                <TopNavBarCustom />
                 <div className="Common-Row-Div">
                     <SideNavCustomMain />
                     <div className="Common-mt-64">

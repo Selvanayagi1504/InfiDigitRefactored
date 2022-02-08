@@ -14,6 +14,7 @@ import {Dropdown, Card} from 'react-bootstrap'
 import {ModuleExpandTickets} from './index';
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 const Option = (props) => {
     return (
@@ -453,7 +454,8 @@ function ModuleExpandGSC() {
     return (
         <>
             <section class="outer-wrapper module-expand-gsc dashboard-seo dashboard-seo-bradcrumb">
-                {
+                <TopNavBarCustom />
+                {/* {
                     usertype == "SEO" 
                     ?
                         <div class="top-nav-bar">
@@ -581,7 +583,7 @@ function ModuleExpandGSC() {
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                }
+                } */}
                 <div className="Common-Row-Div">
                     <SideNavCustomMain />
                     <div className="Common-mt-64">

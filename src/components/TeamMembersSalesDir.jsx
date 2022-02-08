@@ -6,6 +6,7 @@ import "antd/dist/antd.css";
 import { Table, Input, Breadcrumb } from "antd";
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
@@ -136,7 +137,7 @@ function TeamMembersSalesDir() {
   return (
     <>
       <section class="outer-wrapper team-members">
-        <div class="top-nav-bar">
+        {/* <div class="top-nav-bar">
           <div className="Ham">
             <SideNavCustomMainMob />
             <div class="logo">
@@ -208,8 +209,8 @@ function TeamMembersSalesDir() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
-
+        </div> */}
+        <TopNavBarCustom />
         <div className="Common-Row-Div">
           <SideNavCustomMain />
           <div className="Common-mt-64">

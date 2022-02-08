@@ -19,6 +19,7 @@ import makeAnimated from "react-select/animated";
 import PropTypes from "prop-types";
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 const Option = (props) => {
   return (
@@ -480,7 +481,8 @@ function ModuleExpandSiteUptime() {
   return (
     <>
       <section class="outer-wrapper module-expand-site-uptime dashboard-seo dashboard-seo-bradcrumb">
-        {usertype == "SEO" ? (
+        <TopNavBarCustom />
+        {/* {usertype == "SEO" ? (
           <div class="top-nav-bar">
           <div className="Ham">
               <SideNavCustomMainMob />
@@ -631,7 +633,7 @@ function ModuleExpandSiteUptime() {
             </div>
             <div class="clearfix"></div>
           </div>
-        )}
+        )} */}
         <div className="Common-Row-Div">
           <SideNavCustomMain />
           <div className="Common-mt-64">

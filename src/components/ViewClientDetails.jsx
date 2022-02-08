@@ -10,6 +10,7 @@ import { Dropdown } from "react-bootstrap";
 import Chart from "react-google-charts";
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 const Option = (props) => {
   return (
@@ -246,7 +247,7 @@ function ViewClientDetails() {
   return (
     <>
       <section class="outer-wrapper view-client-list">
-        <div class="top-nav-bar">
+        {/* <div class="top-nav-bar">
           <div className="Ham">
             <SideNavCustomMainMob />
             <div class="logo">
@@ -317,8 +318,8 @@ function ViewClientDetails() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
-
+        </div> */}
+        <TopNavBarCustom />
         <div className="Common-Row-Div">
           <SideNavCustomMain />
           <div className="common-mt-64">

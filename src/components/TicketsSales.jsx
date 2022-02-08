@@ -5,6 +5,7 @@ import {  Modal } from "react-bootstrap";
 import { Dropdown } from "react-bootstrap";
 import { DatePicker } from "antd";
 import { Breadcrumb } from "antd";
+import TopNavBarCustom from "./TopNavBar";
 
 function TicketsSales() {
   const [startDate, setStartDate] = useState(new Date());
@@ -96,7 +97,8 @@ function TicketsSales() {
   return (
     <>
       <section class="outer-wrapper">
-        <div class="top-nav-bar">
+        <TopNavBarCustom />
+        {/* <div class="top-nav-bar">
           <div class="logo">
             <a href="">
               <img src="images/infidigit-logo.png" />
@@ -180,7 +182,7 @@ function TicketsSales() {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div class="content-wrapper">
           <div class="dashboard-wrapper">
             <Breadcrumb>

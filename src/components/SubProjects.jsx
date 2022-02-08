@@ -4,6 +4,7 @@ import { Table, Input } from "antd";
 import { Breadcrumb } from "antd";
 import { NotificationSEO } from "./index";
 import { Sidenav, Nav, Dropdown } from "rsuite";
+import TopNavBarCustom from "./TopNavBar";
 
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
@@ -168,7 +169,8 @@ function SubProjects() {
   return (
     <>
       <section class="outer-wrapper sub-projects">
-        <div class="top-nav-bar">
+        <TopNavBarCustom />
+        {/* <div class="top-nav-bar">
           <div class="logo">
             <a href="">
               <img src="images/infidigit-logo.png" />
@@ -179,26 +181,7 @@ function SubProjects() {
           <div class="nav-bar-right">
             <ul class="list-unstyled nav-right-menu">
               <li>
-                {/* <Dropdown id="notification-dropdown">
-                        <Dropdown.Toggle id="dropdown-basic">
-                        <i class="fa fa-bell"></i>
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            <Dropdown.Item href="">
-                                <div className="notification-item">
-                                    <h4>Notification 1!!</h4>
-                                    <p>21 hours ago..</p>
-                                </div>
-                            </Dropdown.Item>
-                            <hr />
-                            <Dropdown.Item href="" style={{backgroundColor:"#85C1E9"}}>
-                                <div className="notification-item" >
-                                    <h4>Notification 2!!</h4>
-                                    <p>8 hours ago..</p>
-                                </div>
-                            </Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown> */}
+                
                 <NotificationSEO />
               </li>
 
@@ -235,7 +218,7 @@ function SubProjects() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
+        </div> */}
 
         <div class="sidebar-nav-bar">
           <ul class="list-unstyled side-menu">

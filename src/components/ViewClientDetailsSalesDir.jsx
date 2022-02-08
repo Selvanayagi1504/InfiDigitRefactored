@@ -9,6 +9,7 @@ import { components } from "react-select";
 import { Dropdown } from "react-bootstrap";
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 const Option = (props) => {
   return (
@@ -219,7 +220,8 @@ function ViewClientDetailsSalesDir() {
   return (
     <>
       <section class="outer-wrapper View-Client-Dir">
-        <div class="top-nav-bar">
+        <TopNavBarCustom />
+        {/* <div class="top-nav-bar">
           <div className="Ham">
             <SideNavCustomMainMob />
             <div class="logo">
@@ -290,7 +292,7 @@ function ViewClientDetailsSalesDir() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
+        </div> */}
 
         <div className="Common-Row-Div">
           <SideNavCustomMain />

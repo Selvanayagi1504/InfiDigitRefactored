@@ -8,6 +8,7 @@ import {Dropdown, Card} from 'react-bootstrap'
 import {ModuleExpandTickets, SideNavBarCustom, SideNavBarCustomClosed} from './index';
 import { DateObject } from "react-multi-date-picker"
 import { Calendar } from "react-multi-date-picker"
+import TopNavBarCustom from "./TopNavBar";
 
 const Option = (props) => {
     return (
@@ -466,7 +467,7 @@ function ModuleExpandBackLinks() {
     return (
         <>
             <section class="outer-wrapper ModuleExpandBacklinks dashboard-seo">
-                {
+                {/* {
                     usertype == "SEO" ?
                         <div class="top-nav-bar">
                             <div class="logo">
@@ -585,7 +586,8 @@ function ModuleExpandBackLinks() {
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                }
+                } */}
+                <TopNavBarCustom />
                 <div className="custom-row-dashboard-seo">
                     <div className={sidenavToggle?"custom-column-20-dashboard-seo":"custom-column-10-dashboard-seo"}>
                         <div class="sidebar-nav-bar">

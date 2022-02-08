@@ -13,6 +13,7 @@ import { Calendar } from "react-multi-date-picker"
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
 import Chart from "react-google-charts";
+import TopNavBarCustom from "./TopNavBar";
 
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
@@ -273,7 +274,7 @@ useEffect(() => {
 return (
 <>
 <section class="outer-wrapper dashboard-seo">
-  <div class="top-nav-bar">
+  {/* <div class="top-nav-bar">
       <div className="Ham dashboard-seo-burger">
         <SideNavCustomMainMob />
         <div class="logo">
@@ -335,8 +336,8 @@ return (
         </ul>
       </div>
       <div class="clearfix"></div>
-    </div>
-
+    </div> */}
+<TopNavBarCustom />
   <div className="Common-Row-Div">
    <SideNavCustomMain />
     <div className="Common-mt-64 dashboard-seo-bradcrumb">

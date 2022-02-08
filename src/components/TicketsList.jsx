@@ -12,6 +12,7 @@ import { Modal } from "react-bootstrap";
 import { NotificationSEO } from "./index";
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
@@ -421,7 +422,7 @@ function TicketsList() {
   return (
     <>
       <section class="outer-wrapper client-list ticket-list dashboard-seo">
-        <div className="top-nav-bar">
+        {/* <div className="top-nav-bar">
           <div className="Ham tickets-burger">
             <SideNavCustomMainMob />
             <div class="logo">
@@ -524,7 +525,8 @@ function TicketsList() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
+        </div> */}
+        <TopNavBarCustom />
         <div className="Common-Row-Div">
           <SideNavCustomMain />
           <div className="Common-mt-64">

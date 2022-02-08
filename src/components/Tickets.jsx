@@ -7,6 +7,7 @@ import { DatePicker } from "antd";
 import { Breadcrumb } from "antd";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
 import SideNavCustomMain from "./SideNavCustomMain";
+import TopNavBarCustom from "./TopNavBar";
 
 function Tickets() {
   const [startDate, setStartDate] = useState(new Date());
@@ -150,7 +151,8 @@ function Tickets() {
   return (
     <>
       <section class="outer-wrapper dashboard-seo">
-        <div class="top-nav-bar">
+        <TopNavBarCustom />
+        {/* <div class="top-nav-bar">
           <div className="Ham tickets-burger">
             <SideNavCustomMainMob />
             <div class="logo">
@@ -276,7 +278,7 @@ function Tickets() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
+        </div> */}
 
         <div className="Common-Row-Div">
           <SideNavCustomMain />

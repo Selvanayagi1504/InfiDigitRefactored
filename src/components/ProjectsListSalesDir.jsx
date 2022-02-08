@@ -5,6 +5,7 @@ import { Breadcrumb } from "antd";
 import { Dropdown } from "react-bootstrap";
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
@@ -147,7 +148,7 @@ function ProjectsListSalesDir() {
   return (
     <>
       <section class="outer-wrapper sub-projects">
-        <div class="top-nav-bar">
+        {/* <div class="top-nav-bar">
           <div className="Ham">
             <SideNavCustomMainMob />
             <div class="logo">
@@ -219,8 +220,8 @@ function ProjectsListSalesDir() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
-
+        </div> */}
+        <TopNavBarCustom />
         <div className="Common-Row-Div">
           <SideNavCustomMain />
 

@@ -14,6 +14,7 @@ import { DateObject } from "react-multi-date-picker";
 import { Calendar } from "react-multi-date-picker";
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 const Option = (props) => {
   return (
@@ -315,7 +316,8 @@ function ModuleExpandKeywordResearch() {
   return (
     <>
       <section class="outer-wrapper module-expand-keyword dashboard-seo dashboard-seo-bradcrumb">
-        {usertype == "SEO" ? (
+        <TopNavBarCustom />
+        {/* {usertype == "SEO" ? (
           <div class="top-nav-bar">
           <div className="Ham">
               <SideNavCustomMainMob />
@@ -466,7 +468,7 @@ function ModuleExpandKeywordResearch() {
             </div>
             <div class="clearfix"></div>
           </div>
-        )}
+        )} */}
 
         <div className="Common-Row-Div">
           <SideNavCustomMain />

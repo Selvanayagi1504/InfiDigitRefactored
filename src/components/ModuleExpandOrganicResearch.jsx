@@ -14,6 +14,7 @@ import {
 } from "./index";
 import DatePicker, { DateObject } from "react-multi-date-picker";
 import { Calendar } from "react-multi-date-picker";
+import TopNavBarCustom from "./TopNavBar";
 
 const Option = (props) => {
   return (
@@ -421,7 +422,8 @@ function ModuleExpandOrganicResearch() {
   return (
     <>
       <section class="outer-wrapper module-expand-site-uptime module-organic-research dashboard-seo">
-        {usertype == "SEO" ? (
+        <TopNavBarCustom />
+        {/* {usertype == "SEO" ? (
           <div class="top-nav-bar">
             <div class="logo">
               <a href="">
@@ -483,7 +485,7 @@ function ModuleExpandOrganicResearch() {
                 )}
               </div>
             </div>
-            {/* <div class="nav-bar-center">&nbsp;</div> */}
+            // <div class="nav-bar-center">&nbsp;</div> 
             <div class="nav-bar-right">
               <ul class="list-unstyled nav-right-menu">
                 <li>
@@ -614,7 +616,7 @@ function ModuleExpandOrganicResearch() {
             </div>
             <div class="clearfix"></div>
           </div>
-        )}
+        )} */}
         <div className="custom-row-dashboard-seo">
           <div
             className={

@@ -3498,11 +3498,11 @@ h2.tab-title-comfiguration {
 .dashboard-seo-dropdown .list-item:active {
   background-color: #f3f3f3;
 }
-.dashboard-seo .logo {
+.logo {
   width: 62%;
 } 
-.dashboard-seo .nav-bar-center {
-  width: 32%;
+.nav-bar-center {
+  width: 0%;
 }
 .dashboard-seo-dropdown .row {
   background-color: #fff;

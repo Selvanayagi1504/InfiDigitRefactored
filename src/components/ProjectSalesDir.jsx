@@ -8,6 +8,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { default as ReactSelect } from "react-select";
 import { components } from "react-select";
 import { SideNavBarCustom, SideNavBarCustomClosed } from ".";
+import TopNavBarCustom from "./TopNavBar";
 
 const Option = (props) => {
   return (
@@ -187,7 +188,8 @@ function ProjectSalesDir() {
   return (
     <>
       <section class="outer-wrapper client-list">
-        <div class="top-nav-bar">
+        <TopNavBarCustom />
+        {/* <div class="top-nav-bar">
           <div class="logo">
             <a href="">
               <img src="images/infidigit-logo.png" />
@@ -256,7 +258,7 @@ function ProjectSalesDir() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
+        </div> */}
 
         <div className="custom-row-dashboard-seo">
           <div

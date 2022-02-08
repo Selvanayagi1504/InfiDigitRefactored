@@ -22,6 +22,7 @@ import $ from "jquery";
 import { customRanges } from "./functions";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
 import moment from "moment";
+import TopNavBarCustom from "./TopNavBar";
 const datePickerHandler = (event, picker) => {
   let value =
     picker.startDate.format("DD-MM-YYYY") +
@@ -271,7 +272,8 @@ function ModuleExpandSEOVolatality() {
   return (
     <>
       <section class="outer-wrapper seo-main dashboard-seo dashboard-seo-bradcrumb">
-        {usertype == "SEO" ? (
+        <TopNavBarCustom />
+        {/* {usertype == "SEO" ? (
           <div class="top-nav-bar">
           <div className="Ham">
               <SideNavCustomMainMob />
@@ -419,7 +421,7 @@ function ModuleExpandSEOVolatality() {
             </div>
             <div class="clearfix"></div>
           </div>
-        )}
+        )} */}
 
         <div className="custom-row-dashboard-seo">
           <div

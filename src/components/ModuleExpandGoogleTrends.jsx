@@ -13,6 +13,7 @@ import DatePicker,{ DateObject } from "react-multi-date-picker"
 import { Calendar } from "react-multi-date-picker"
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from './SideNavCustomMainMob'
+import TopNavBarCustom from "./TopNavBar";
 
 const Option = (props) => {
     return (
@@ -307,7 +308,8 @@ function ModuleExpandGoogleTrends() {
     return (
         <>
             <section class="outer-wrapper module-expand-GT dashboard-seo dashboard-seo-bradcrumb">
-                {
+                <TopNavBarCustom />
+                {/* {
                     usertype == "SEO" 
                     ?
                         <div class="top-nav-bar">
@@ -440,7 +442,7 @@ function ModuleExpandGoogleTrends() {
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                }
+                } */}
 
            
                 <div className="Common-Row-Div">

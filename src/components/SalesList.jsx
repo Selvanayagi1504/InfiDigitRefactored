@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "antd/dist/antd.css";
 import { Table, Input, Row, Col } from "antd";
 import { Dropdown } from "react-bootstrap";
+import TopNavBarCustom from "./TopNavBar";
 
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
@@ -118,7 +119,8 @@ function SalesList() {
   return (
     <>
       <section class="outer-wrapper">
-        <div class="top-nav-bar">
+        <TopNavBarCustom />
+        {/* <div class="top-nav-bar">
           <div class="logo">
             <a href="">
               <img src="images/infidigit-logo.png" />
@@ -186,7 +188,7 @@ function SalesList() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
+        </div> */}
 
         <div class="sidebar-nav-bar">
           <ul class="list-unstyled side-menu">

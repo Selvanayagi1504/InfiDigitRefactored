@@ -1,13 +1,13 @@
 import React from "react";
 import { Dropdown } from "react-bootstrap";
-
+import TopNavBarCustom from "./TopNavBar";
 import { useState } from "react";
 function SalesNew() {
   const [sidenav, setsidenav] = useState(false);
   return (
     <>
       <section class="outer-wrapper">
-        <div class="top-nav-bar">
+        {/* <div class="top-nav-bar">
           <div class="logo">
             <a href="">
               <img src="images/infidigit-logo.png" />
@@ -76,8 +76,9 @@ function SalesNew() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
-
+        </div> */}
+        
+        <TopNavBarCustom />
         <div class="sidebar-nav-bar">
           <ul class="list-unstyled side-menu">
             <li>

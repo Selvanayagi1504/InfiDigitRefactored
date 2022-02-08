@@ -13,6 +13,7 @@ import { useLocation } from "react-router-dom";
 
 import { NotificationSEO } from "./index";
 import SideNavCustomMain from "./SideNavCustomMain";
+import TopNavBarCustom from "./TopNavBar";
 
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
@@ -411,7 +412,8 @@ function TicketsListCustomers() {
   return (
     <>
       <section class="outer-wrapper client-list ticket-list dashboard-seo">
-        <div class="top-nav-bar">
+        <TopNavBarCustom />
+        {/* <div class="top-nav-bar">
           <div class="logo">
             <a href="">
               <img src="images/infidigit-logo.png" />
@@ -472,7 +474,7 @@ function TicketsListCustomers() {
               )}
             </div>
           </div>
-          {/* <div class="nav-bar-center">&nbsp;</div> */}
+          {/* <div class="nav-bar-center">&nbsp;</div> 
           <div class="nav-bar-right">
             <ul class="list-unstyled nav-right-menu">
               <li>
@@ -512,7 +514,7 @@ function TicketsListCustomers() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
+        </div> */}
 
         <div className="Common-Row-Div">
           <SideNavCustomMain />

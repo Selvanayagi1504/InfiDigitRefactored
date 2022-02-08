@@ -17,6 +17,7 @@ import {
     DropdownMenu,
     DropdownItem
   } from "reactstrap";
+import TopNavBarCustom from "./TopNavBar";
 
 
 
@@ -474,7 +475,7 @@ function EditProject() {
     <>
         
         <section class="outer-wrapper sub-projects">
-            <div class="top-nav-bar">
+            {/* <div class="top-nav-bar">
                 <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span></div>
                 <div class="nav-bar-center">&nbsp;</div>
                 <div class="nav-bar-right">
@@ -522,8 +523,8 @@ function EditProject() {
                     </ul>
                 </div>
                 <div class="clearfix"></div>
-            </div>
-
+            </div> */}
+<TopNavBarCustom />
             <div class="sidebar-nav-bar">
                 <ul class="list-unstyled side-menu">
                     <li>

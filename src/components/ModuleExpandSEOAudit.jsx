@@ -28,6 +28,7 @@ import {
 import "react-circular-progressbar/dist/styles.css";
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 //   import ChangingProgressProvider from "./ChangingProgressProvider";
 //   /////////////////////////
@@ -471,7 +472,8 @@ function ModuleExpandSEOAudit() {
   return (
     <>
       <section class="outer-wrapper seo-audit dashboard-seo dashboard-seo-bradcrumb">
-        {usertype == "SEO" ? (
+        <TopNavBarCustom />
+        {/* {usertype == "SEO" ? (
           <div class="top-nav-bar">
           <div className="Ham">
               <SideNavCustomMainMob />
@@ -622,7 +624,7 @@ function ModuleExpandSEOAudit() {
             </div>
             <div class="clearfix"></div>
           </div>
-        )}
+        )} */}
 
         <div className="Common-Row-Div">
           <SideNavCustomMain />

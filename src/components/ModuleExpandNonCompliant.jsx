@@ -13,6 +13,7 @@ import { ModuleExpandTickets } from "./index";
 import Pagination from "@mui/material/Pagination";
 import { addClass } from "dom-lib";
 import ReactApexChart from "react-apexcharts";
+import TopNavBarCustom from "./TopNavBar";
 
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
@@ -304,7 +305,7 @@ function ModuleExpandNonComplaint() {
   return (
     <>
       <section class="outer-wrapper seo-audit dashboard-seo-bradcrumb">
-        <div class="top-nav-bar">
+        {/* <div class="top-nav-bar">
           <div class="logo">
             <a href="">
               <img src="images/infidigit-logo.png" />
@@ -351,8 +352,8 @@ function ModuleExpandNonComplaint() {
             </ul>
           </div>
           <div class="clearfix"></div>
-        </div>
-
+        </div> */}
+<TopNavBarCustom />
         <div class="content-wrapper">
           <div class="dashboard-wrapper">
             <div class="sidebar-nav-bar">

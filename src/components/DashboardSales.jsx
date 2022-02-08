@@ -26,6 +26,7 @@ import DatePicker,{ DateObject } from "react-multi-date-picker"
 import { Calendar } from "react-multi-date-picker"
 import SideNavCustomMain from "./SideNavCustomMain";
 import SideNavCustomMainMob from "./SideNavCustomMainMob";
+import TopNavBarCustom from "./TopNavBar";
 
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
@@ -373,7 +374,7 @@ useEffect(() => {
 return (
 <>
 <section class="outer-wrapper dashboard-sales">
-  <div class="top-nav-bar">
+  {/* <div class="top-nav-bar">
       <div className="Ham">
         <SideNavCustomMainMob />
         <div class="logo"><a href=""><img src="images/infidigit-logo.png" /></a> <span>Growth</span>
@@ -423,7 +424,8 @@ return (
         </ul>
       </div>
       <div class="clearfix"></div>
-    </div>
+    </div> */}
+    <TopNavBarCustom />
     <div className="Common-Row-Div">
      <SideNavCustomMain />
       <div className="Common-mt-64">

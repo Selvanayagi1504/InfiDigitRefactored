@@ -9,6 +9,7 @@ import Barchart from "../components/barchart";
 import Filter from "./assets/funnel-fill.svg";
 import "antd/dist/antd.css";
 import { Breadcrumb } from "antd";
+import TopNavBarCustom from "./TopNavBar";
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
     console.log(
@@ -307,7 +308,8 @@ function TicketsListSales() {
   return (
     <>
       <section class="outer-wrapper client-list ticket-list">
-        <div class="top-nav-bar">
+        <TopNavBarCustom />
+        {/* <div class="top-nav-bar">
           <div class="logo">
             <a href="">
               <img src="images/infidigit-logo.png" />
@@ -391,7 +393,7 @@ function TicketsListSales() {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div class="content-wrapper">
           <div class="dashboard-wrapper">
             <Breadcrumb>
