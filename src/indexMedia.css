@@ -1,0 +1,469 @@
+@media(max-width:767px){
+    .user-common-card {
+        width: unset;
+    }
+    #usertype{
+        margin-left: 8px;
+    }
+    .module-expand-site-uptime div#reactgooglegraph-1 {
+        margin-top: -62px;
+    }
+    .Common-Row-Div{
+        display: block;
+    }
+    .ROI input[type="text"], .ROI select{
+        width: 100%;
+    }
+    aside{
+        display: none;
+    }
+    .ant-table-cell {
+        min-width: 50px;
+        max-width: 150px;
+    }
+    .Common-mt-64{
+        width: 93%;
+        margin-left: 12px;
+    }
+    .top-nav-bar{
+        height: 72px;
+        padding: 12px;
+        display: flex;
+    }
+    .top-nav-bar .Ham{
+        display: flex;
+    }
+    .logo img {
+        max-height: 32px;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .nav-bar-center{
+        display: none;
+    }
+    .nav-bar-right{
+        width: 76%;
+    }
+    .team-members .add-new-btnw{
+        text-align: left;
+    }
+    .team-members .data-per-page, .client-list .data-per-page-client, .sub-projects .data-per-page, .client-list .data-per-page{
+        display: none;
+    }
+    .team-members .ant-pagination-prev, .ant-pagination-jump-prev, .ant-pagination-jump-next, .client-list .ant-pagination-prev, .ant-pagination-jump-prev, .ant-pagination-jump-next{
+        margin-right: 5px;
+    }
+    .ant-pagination-prev, .ant-pagination-jump-prev, .ant-pagination-jump-next{
+        margin-right: 5px !important;
+    }
+    .client-list .data-export-client span.ant-input-group-wrapper.ant-input-search{
+        width:32%
+    }
+    .add-user{
+        width: 100%;
+    }
+    .sub-projects select, .sub-projects input, .sub-projects .css-2b097c-container{
+        margin-bottom: 10px;
+    }
+    .sub-projects .react-tabs__tab{
+        width: 100px;
+        display: -webkit-inline-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .sub-projects .common-table{
+        padding-top: unset;
+    }
+    .sub-projects .data-export{
+        margin-bottom: unset;
+    }
+    .sub-projects .tab-panel-url-options{
+        float: left;
+        flex-wrap: wrap;
+    }
+    .sub-projects .tab-panel-url-options span.ant-input-group-wrapper.ant-input-search{
+        margin-bottom: 10px;
+    }
+    .sub-projects div#url{
+        overflow: scroll;
+    }
+    .View-Client-Dir .common-wcard{
+        padding: unset;
+        margin: unset;
+    }
+    .View-Client-Dir .common-form-fields{
+        padding: unset;
+    }
+    .View-Client-Dir .css-yk16xz-control{
+        margin-bottom: 10px;
+    }
+    .configuration .custom-row {
+        display: block;
+    }
+    .configuration .custom-column-33, .configuration .custom-column-30 {
+        width: 100%;
+        height: unset;
+    }
+    .configuration .custom-borrig{
+       border-right: unset;
+       border-bottom: 2px solid grey;
+       margin-bottom: 24px;
+    }
+    .configuration .custom-column-70{
+        width: 100%;
+        padding: 10px 0px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .configuration .data-export-client{
+        width: 100%;
+        margin-left: unset;
+        text-align: left;
+    }
+    .configuration .data-export-client span.ant-input-group-wrapper.ant-input-search{
+        width: 58%;
+    }
+    .configuration .count-drop{
+        display: none;
+    }
+    .configuration #access-permissions .designation-box .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .configuration #access-permissions .designation-box{
+        height: 200px;
+    }
+    .configuration #access-permissions .col-md-2{
+        width: 35%;
+    }
+    .configuration input#role-name, .configuration input#username{
+        width: 100%;
+    }
+    .configuration .data-per-page{
+        display: none;
+    }
+    /* .configuration #Employees .main-title, .configuration #lead-add .main-title, .configuration #clinet-sub .main-title, .configuration #team-members .main-title{
+        margin-left: 20px;
+    } */
+    .configuration .table-modules select#keywordGTFrequency, select#UrlPSFrequency{
+        width: 92%;
+    }
+    .configuration .main-title{
+        margin-left: 20px;
+    }
+    .configuration #team-members .css-yk16xz-control{
+        margin-bottom: 10px;
+    }
+    .configuration .progress-bar-lead-add{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    .configuration .progress-bar-lead-add .step-status{
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .configuration .tab-panel-url input[type="text"]{
+        width: 100% !important;
+    }
+    .configuration #url-comp .tab-panel-url-options, .configuration #comp .tab-panel-url-options, .configuration #keyword .tab-panel-url-options{
+        flex-wrap: wrap;
+        float: left;
+        display: flex;
+    }
+    .configuration #url-comp .tab-panel-url-options span.ant-input-group-wrapper.ant-input-search, .configuration #comp .tab-panel-url-options span.ant-input-group-wrapper.ant-input-search, .configuration #keyword .tab-panel-url-options span.ant-input-group-wrapper.ant-input-search{
+        margin-bottom: 10px;
+    }
+    div#url, .module-expand-GT #sample-module-expand{
+        overflow: scroll;
+    }
+    .dashboard-seo .logo{
+        width: 20%;
+    }
+    .calendar-main {
+        margin-top: unset;
+        margin-bottom: 24px;
+    }
+    .multiselect-google-trends label, .module-expand-GT label{
+        width: 100px;
+    }
+    .module-expand-GT .score-maintain{
+        margin-top: 10px;
+        margin-bottom: -64px;
+    }
+    .module-expand-GT .line-graph svg rect:first-child, .module-expand-GT #reactgooglegraph-2 svg rect:first-child{
+        fill: transparent;
+    }
+    .module-expand-bar{
+        width: 100% !important;
+        margin-left: unset !important;
+    }
+    .module-expand-bar canvas.canvasjs-chart-canvas{
+        width: unset !important;
+    }
+    .page-speed-main #device-type{
+        width: 30%;
+    }
+    .page-speed-main .common-label{
+        width: 100px;
+        text-align: right;
+    }
+    .page-speed-main .css-yk16xz-control{
+        min-width: 59%;
+    }
+    .page-speed-main .score-maintain{
+        margin-top: 10px;
+        margin-bottom: -64px;
+    }
+    .page-speed-main .line-graph svg rect:first-child, .page-speed-main #reactgooglegraph-2 svg rect:first-child{
+        fill: transparent;
+    }
+    .module-expand-click-share .col-lg-3{
+        width: 100% !important;
+    }
+    .website-main label{
+        width: 31% !important;
+    }
+    .website-main .css-yk16xz-control{
+        width: 200%;
+    }
+    .module-expand-click-share .website{
+        justify-content: flex-start;
+    }
+    .Rank-track-top{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .Rank-track-top .common-label{
+        width: 167px;
+    }
+    .Rank-track-top #device-type{
+        margin-right: unset  !important;
+    }
+    .rank-track-graph .css-yk16xz-control{
+        width: 17em;
+    }
+    .rank-track-graph{
+        display: block !important;
+    }
+    .rank-track-graph label{
+        width: 70px;
+    }
+    .rank-track-graph-input-2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .rank-track-graph-input-2 label{
+        margin-left: unset !important;
+    }
+    .module-expand-site-uptime div#sample-module-expand{
+        overflow: scroll;
+    }
+    .site-uptime-input .common-label{
+        width: 100px;
+    }
+    .site-uptime-input .css-yk16xz-control{
+        width: 15em;
+    }
+    .site-uptime-box .box-outer{
+        margin-bottom: 10px;
+    }
+    div#sample-module-expand{
+        overflow: scroll;
+    }
+    .search-results-gsc-main{
+        flex-wrap: wrap;
+        width: 327px;
+    }
+    .search-box-GSC{
+        padding:10px !important;
+    }
+    .module-expand-gsc .common-flex-div{
+        display: block;
+    }
+    .module-expand-gsc .common-flex-div div{
+        width: 100% !important;
+    }
+    .module-expand-gsc .score-maintain{
+        margin-bottom: 52px;
+        height: 76px;
+    }
+    .ROI-outer{
+        width: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ROI-inner{
+        margin-bottom: 10px;
+    }
+    .da-average-div{
+        width: unset;
+    }
+    .module-expand-keyword input[type="text"], .module-expand-keyword input[type="date"], .module-expand-keyword select{
+        width: 100%;
+    }
+    .module-expand-keyword .outline-btn-boderless{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .module-expand-ga .multiselect-graph-ga, .module-expand-ga select{
+        width: 50%;
+    }
+    .margin-left-seo-audit-5{
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .seo-audit .progress-circle, .seo-audit .progress-text{
+        min-width: 300px;
+    }
+    .charts-flex .charts-main-box{
+        width:100%;
+    }
+    svg.CircularProgressbar{
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24px;
+    }
+    .view-client-list .ant-breadcrumb {
+        margin-top: 119px;
+        
+    }
+    .view-client-list .main-title{
+        margin-left: 17px;
+    }
+    .view-client-list .common-form-fields, .view-client-list .common-wcard{
+        padding-bottom: unset;
+        padding-top: unset;
+        margin-bottom: unset;
+    }
+    .view-client-list{
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .notes-input-box textarea{
+        width: 100%;
+    }
+    .view-client-list .css-yk16xz-control{
+        width: 62%;
+    }
+    .dashboard-seo .charts-flex .chart-legend-listing{
+        flex-wrap: wrap;
+        max-width: 300px;
+        width: 100%;
+    }
+    .dashboard-seo .charts-flex .charts-main-box{
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .legend-list{
+        width: unset;
+        margin-bottom: 24px;
+    }
+    .dashboard-seo .charts-flex{
+        display: block;
+    }
+    .wrapper.dashboard-seo-dropdown{
+        margin-top: 20px;
+    }
+    .SideMob{
+        display: block;
+    }
+    .SideMob .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #4e73df;
+            background-image: linear-gradient( 
+        180deg
+        ,#4e73df 10%,#224abe 100%);
+            background-size: cover;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .SideMob .sidenav a {
+        padding: 8px 8px 8px 32px;
+        font-weight: 40;
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+      .SideMob .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .SideMob .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      .charts-main-box{
+          padding-right: 10px;
+      }
+      .dashboard-customers svg.CircularProgressbar{
+          width: 360%;
+      }
+      .dashboard-customers .add-new-btnw.customers-right{
+          text-align: center;
+      }
+    .SideMob .side-menu div{
+        margin-top: unset !important;
+        
+    }
+    .SideMob .side-menu i{
+        width: 50px;
+    }
+    .mob-mod {
+        margin-left: 40px;
+        padding-top: 20px;
+    }
+    .Ha.dashboard-seo-burger .wrapper.dashboard-seo-dropdown{
+        margin-top: -6px;
+
+    }
+    .Ham.dashboard-seo-burger .dashboard-seo-dropdown .button{
+        margin-left: -50px;
+    }
+    .Ham.tickets-burger .wrapper.dashboard-seo-dropdown{
+        display: none;
+    }
+    .alogo span, .logo span{
+        font-size: 14px;
+    }
+    .ROI div#reactgooglegraph-1 {
+        margin-top: -64px;
+    }
+    .module-expand-keyword div#reactgooglegraph-1 {
+        margin-top: -62px !important;
+    }
+    .seo-audit .audit-title {
+        margin-left: 12px;
+    }
+    .search span.ant-input-group-wrapper.ant-input-search{
+        width: 100%;
+    }
+    .data-export-client{
+        text-align: start;
+        margin-left: 12px;
+    }
+    .data-export-client .count-drop{
+        margin-left:unset;
+        margin-right:unset;
+    }
+}
+
